@@ -19,11 +19,21 @@ const comments_data = [
     date: "Yesterday, 5:03 PM", 
     comment: "Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
   }
-]
+];
 
 new Vue({ 
   el: "#comments_block",
   data: {
     comments: comments_data
+  },
+  methods: {
+    addComment: function({ username, comment }) {
+      comments_data.push({
+        id: comments_data.length + 1,
+        username,
+        comment,
+        date: "Today ..."
+      })
+    }
   }
 });
