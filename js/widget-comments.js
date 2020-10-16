@@ -1,23 +1,23 @@
 const comments_data = [
   {
     id: HELPERS.guid(),
-    username: "juanma",
+    username: faker.name.findName(),
     date: moment("2018-01-25").valueOf(),
-    comment: "sdfsdf"
+    comment: faker.lorem.text()
   },
   {
     id: HELPERS.guid(),
-    avatar: "http://demos.themes.guide/bodeo/assets/images/users/m103.jpg",
-    username: "admin", 
+    avatar: faker.image.avatar(),
+    username: faker.name.findName(), 
     date: moment("2018-03-25").valueOf(),
-    comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."  
+    comment: faker.lorem.text()
   },
   {
     id: HELPERS.guid(),
-    avatar: "http://demos.themes.guide/bodeo/assets/images/users/w102.jpg", 
-    username: "maslarino", 
+    avatar: faker.image.avatar(),
+    username: faker.name.findName(), 
     date: moment("2018-05-25").valueOf(),
-    comment: "Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+    comment: faker.lorem.text()
   }
 ];
 
