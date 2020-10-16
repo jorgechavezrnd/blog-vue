@@ -23,12 +23,12 @@ const templateCommentsForm = `
     <button type="submit" class="btn btn-outline-primary">Add Comment!</button>
   </div>
 </form>
-`;
+`
 
-Vue.component('comments-form', {
+export default {
   props: ['addComment'],
   data: function() {
-  	return {
+    return {
       username: '',
       comment: ''
     }
@@ -43,4 +43,4 @@ Vue.component('comments-form', {
     }
   },
   template: templateCommentsForm
-});
+}

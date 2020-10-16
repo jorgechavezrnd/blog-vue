@@ -12,9 +12,9 @@ const templateCommentsItem = `
   </div>
 
 </div>
-`;
+`
 
-Vue.component('comments-item', {
+export default Vue.component('comments-item', {
   data: function () {
     const formattedTime = moment(this.date).fromNow()
     return { formattedTime }
@@ -35,4 +35,4 @@ Vue.component('comments-item', {
     date: {}
   },
   template: templateCommentsItem
-});
+})

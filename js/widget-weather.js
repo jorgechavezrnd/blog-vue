@@ -1,4 +1,6 @@
-const API_KEY = 'eaea8aac5d46264a2f08d96f22c21fb9';
+import WeatherApiService from './services/WeatherApiService.js'
+
+const API_KEY = '627eb53a00b46c56672e5fef2aa41986'
 const service = new WeatherApiService(API_KEY)
 
 const DEFAULT_QUERY='Barcelona'
@@ -6,7 +8,6 @@ const DEFAULT_QUERY='Barcelona'
 new Vue({
   el: "#widget",
   data: {
-    message: 'sdsdsdf',
     query: DEFAULT_QUERY,
     temp: 0,
     temp_max: 0,

@@ -1,4 +1,4 @@
-class WeatherApiService {
+export default class WeatherApiService {
 	constructor(api_key) {
   	this.getUrlApiWeatherSearch = this.getUrlApiWeatherSearch.bind(this, api_key)
   }
