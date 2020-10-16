@@ -39,6 +39,7 @@ Vue.component('comments-form', {
         username: this.username,
         comment: this.comment
       });
+      this.username = this.comment = ''
     }
   },
   template: templateCommentsForm
